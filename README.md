@@ -7,7 +7,7 @@ Theo Demars SpringBoot REST API
  - Build le projet
  - Clique droit sur le fichier api\src\main\java\com\tdemars\api\ApiApplication.java -> Run as Java Application
 
-## Utilisation avec Postman -> Un gif est disponible montrant l'utilisation
+## Test via Postman
  - Ouvrir Postman
 
  - Faire une requête GET sur http://localhost:9000/teams -> la liste des équipes est retournée
@@ -31,4 +31,4 @@ Theo Demars SpringBoot REST API
  - Faire la commande `node script.js` pour lancer le script
 
 #### Attention ! 
-Veuillez noter que le script execute les requêtes dans un ordre qui n'est pas toujours cohérent. Il est possible que certaines erreurs soient remonter car vous tenter d'update une données qui a été préalablement supprimée par le script. Si cela se produit editez le fichier : "script.js" en modifiant les id dans les méthodes PUT et Delete
+Veuillez noter que le script exécute les requêtes dans un ordre qui n'est pas toujours cohérent. Il est possible que certaines erreurs soient remontées, car vous tentez d'update des données qui ont été préalablement supprimées par le script. Si cela se produit, éditez le fichier : "script.js" en modifiant les id dans les méthodes PUT et Delete
