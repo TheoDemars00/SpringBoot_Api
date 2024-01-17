@@ -10,7 +10,7 @@ Theo Demars SpringBoot REST API
 ## Test via Postman
  - Ouvrir Postman
 
-####Test des methodes des equipes
+#### Test des methodes des equipes
  - Faire une requête GET sur http://localhost:9000/teams -> la liste des équipes est retournée
  - Faire une requête GET sur http://localhost:9000/teams/1 -> l'équipe avec l'id 1 est retournée
  - Faire une requête POST sur http://localhost:9000/teams en indiquant dans le body au format JSON (ex : {"teamName": "Lakers", "city": "Los Angeles"}) avec les attributs de l'équipe -> l'équipe est créée
@@ -20,7 +20,7 @@ Theo Demars SpringBoot REST API
  - Faire une requête DELETE sur http://localhost:9000/teams/3 -> Supprime l'équipe possédant l'ID 3
  - Faire une requête GET sur  http://localhost:9000/teams -> la liste des équipes est retournée avec la suppression
  - 
-####Test des methodes des joueurs
+#### Test des methodes des joueurs
  - Faire une requête GET sur http://localhost:9000/players -> la liste des joueurs est retournée
  - Faire une requête GET sur http://localhost:9000/players/1 -> le joueur avec l'id 1 est retourné
  - Faire une requête POST sur  http://localhost:9000/players en indiquant dans le body au format JSON (ex : {"firstName": "Jaylen", "lastName": "Brown", "position": "Small Forward", "age" : 27}) avec les attributs du joueur -> le joueur est créé
