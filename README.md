@@ -10,19 +10,25 @@ Theo Demars SpringBoot REST API
 ## Test via Postman
  - Ouvrir Postman
 
+####Test des methodes des equipes
  - Faire une requête GET sur http://localhost:9000/teams -> la liste des équipes est retournée
- - Faire une requête GET sur http://localhost:9000/teams/1 -> l'équipe avec l'id 1 est retourné
- - Faire une requête POST sur http://localhost:9000/teams en indiquant dans le body un JSON (ex : {"teamName": "Lakers", "city": "Los Angeles"}) avec les attributs de l'équipe -> l'équipe est créée
+ - Faire une requête GET sur http://localhost:9000/teams/1 -> l'équipe avec l'id 1 est retournée
+ - Faire une requête POST sur http://localhost:9000/teams en indiquant dans le body au format JSON (ex : {"teamName": "Lakers", "city": "Los Angeles"}) avec les attributs de l'équipe -> l'équipe est créée
  - Faire une requête GET sur http://localhost:9000/teams -> la liste des équipes est retournée avec la nouvelle équipe
  - Faire une requête PUT sur http://localhost:9000/teams/3 en indiquant dans le body au format JSON (ex : {"teamName": "Clippers", "city": "Los Angeles"} les nouvelles informations sur une equipe déjà créée
+ - Faire une requête GET sur  http://localhost:9000/teams -> la liste des équipes est retournée avec les modifications
  - Faire une requête DELETE sur http://localhost:9000/teams/3 -> Supprime l'équipe possédant l'ID 3
-
+ - Faire une requête GET sur  http://localhost:9000/teams -> la liste des équipes est retournée avec la suppression
+ - 
+####Test des methodes des joueurs
  - Faire une requête GET sur http://localhost:9000/players -> la liste des joueurs est retournée
  - Faire une requête GET sur http://localhost:9000/players/1 -> le joueur avec l'id 1 est retourné
- - Faire une requête POST sur  http://localhost:9000/players en indiquant dans le body un JSON (ex : {"firstName": "Jaylen", "lastName": "Brown", "position": "Small Forward", "age" : 27}) avec les attributs du joueur -> le joueur est créé
+ - Faire une requête POST sur  http://localhost:9000/players en indiquant dans le body au format JSON (ex : {"firstName": "Jaylen", "lastName": "Brown", "position": "Small Forward", "age" : 27}) avec les attributs du joueur -> le joueur est créé
  - Faire une requête GET sur  http://localhost:9000/players -> la liste des joueurs est retournée avec le nouveau joueur 
  - Faire une requête PUT sur http://localhost:9000/players/3 en indiquant dans le body au format JSON (ex : {"firstName": "Jaylen", "lastName": "Brown", "position": "Shooting Guard", "age" : 27} les nouvelles informations sur un joueur déjà créé
- - Faire une requête DELETE sur http://localhost:9000/players/3 -> Supprime le joueurs possédant l'ID 3 
+ - Faire une requête GET sur  http://localhost:9000/players -> la liste des joueurs est retournée avec les modifications
+ - Faire une requête DELETE sur http://localhost:9000/players/3 -> Supprime le joueurs possédant l'ID 3
+ - Faire une requête GET sur  http://localhost:9000/players -> la liste des joueurs est retournée avec la suppression
 
 ## Utilisation avec le script NodeJS
  - Ouvrir un terminal a la racine du projet
